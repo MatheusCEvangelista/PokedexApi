@@ -1,0 +1,90 @@
+body, html, #root {
+   margin: 0;
+   padding: 0;
+   height: 100%; /* Preenche a altura da janela */
+   box-sizing: border-box;
+   background-color: #f4f4f4; /* Cor de fundo leve */
+ }
+ 
+ .container {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   min-height: 100vh; /* Preenche a altura da tela */
+   justify-content: flex-start; /* Alinha o conteúdo ao topo */
+   align-items: center;
+   padding: 20px; /* Adiciona algum espaço interno */
+ }
+ 
+ header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 35px;
+   height: 60px;
+   width: 100%;
+   background-color: gold;
+   color: white;
+   margin-bottom: 20px; /* Adiciona espaço abaixo do cabeçalho */
+ }
+ 
+ form {
+   display: flex;
+   width: 100%;
+   max-width: 400px; /* Limita a largura do formulário */
+   margin-bottom: 20px;
+ }
+ 
+ form input {
+   flex-grow: 1; /* Permite que o input cresça */
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   margin-right: 10px;
+ }
+ 
+ form button {
+   padding: 10px 20px;
+   background-color: #28a745;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+ 
+ .error {
+   color: red;
+   margin-bottom: 10px;
+ }
+ 
+ div.pokemon-info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 1px solid #ddd;
+   padding: 20px;
+   border-radius: 8px;
+   background-color: white;
+   width: 100%;
+   max-width: 400px;
+   box-sizing: border-box;
+   margin-bottom: 20px; /* Adiciona espaço abaixo das informações do Pokemon */
+ }
+ 
+ div.pokemon-info img {
+   max-width: 100%;
+   height: auto;
+   margin-bottom: 10px;
+ }
+ 
+ div.pokemon-info div {
+   width: 100%;
+   text-align: left;
+   margin-bottom: 5px;
+ }
+ 
+ /* Adiciona um estilo para quando não houver pokemon ou erro */
+ .container > div:last-child {
+   text-align: center;
+   margin-top: 20px;
+ }
